@@ -1,0 +1,23 @@
+xcassets:
+  inputs: Salek/Resources/Assets/Assets.xcassets
+  outputs:
+    templateName: swift5
+    output: Salek/Resources/Assets/AssetsManager.swift
+colors:
+  inputs: Salek/Resources/Colors/color.txt
+  outputs:
+    templateName: swift5
+    output: Salek/Resources/Colors/Colors.swift
+    
+fonts:
+    inputs: Salek/Resources/Fonts
+    outputs:
+        templateName: swift4
+        output: Salek/Resources/Fonts/FontManager.swift
+
+strings:
+    inputs: Salek/Resources/Strings/en.lproj
+    outputs:
+        templateName: structured-swift5
+        output: Salek/Resources/Strings/Strings.swift
+

@@ -1,0 +1,11 @@
+cannary: #aa0033
+veryLightPink: #CCCCCC
+white: #ffffff
+lightnavy: #163172
+commonButton: #001867
+steelGrey: #848585
+green: #28df99
+blue: #4756ca
+lightBlue: #bbe1fa
+bluepurp: #474ECA
+lightWhite: #f7f5f5

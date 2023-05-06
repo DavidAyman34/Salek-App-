@@ -1,0 +1,90 @@
+/* 
+  Localizable.strings
+  Salek
+
+  Created by Divo Ayman on 4/10/21.
+  Copyright © 2021 Divo Ayman. All rights reserved.
+*/
+"signinBtn" = "الدخول";
+"forgetPass" = "نسيت كلمة المرور";
+"skipBtn" = "〈";
+"createAccountBtn" = "Create Account";
+"languageBtn" = "اللغة";
+"orLabel" = "OR";
+"emailText" = "Email";
+"passText" = "Password";
+"storeLabel" = "  Store
+Customize and Personalize Chrome on your desktop computer with Extensions, Themes and Apps. Power up your Chrome. You can  " ;
+"personalLabel" = " individual
+Customize and Personalize Chrome on your desktop computer with Extensions, Themes and Apps. Power up your Chrome. You can ";
+"workLabel" = " Work with us
+Customize and Personalize Chrome on your desktop computer with Extensions, Themes and Apps. Power up your Chrome. You can ";
+"nextBtn" = "Next";
+"chooseLabel" = "Choose Account";
+"DetailsTextField" = "Details store";
+"confirmPassTextField" = "Confirm Password";
+"nameTextField" = "Name";
+"storeTypeTextField" = "Store Type";
+"hotlineTextField" = "Hotline";
+"landlineTextField" = "LandLine";
+"mobileTextField" = "Mobile";
+"detailAddressTextField" = "Details Address";
+"addressTextField" = "Address";
+"termsBtn" = "Term & Conditions";
+"agreeLabel" = "I agree to the ";
+"infoLabel" = "Store Info";
+"detailsLabel " = "Details";
+"addressLabel" = "Addresses & Contact";
+"navgationTitle" = "Signup Store";
+"emailMessage" = "please enter a valid email or mobile number";
+"passMessage" = "please enter a valid Password";
+"mobileMessage" = "Please enter a valid mobile number";
+"landlineMassage" = "Please enter a valid landline number";
+"addressMessage" = "Please enter a valid location";
+"detailsAdressesMassage" =  "Please enter a valid details adresses";
+"uploadLicenseMassage" = "Please upload you license";
+"nameMessage" = "Please enter a valid Name";
+"confirmPassMassage" = "Please enter a valid Confirm Password";
+"storeTypeMassage" = "Please enter a valid Store Type";
+"invalidMassage" = "Invalid";
+"confirmPassword" = "Password confirmation does not match password";
+"validEmailOrPhone" = "Ex:- user@example.com
+OR
+Phone Must Be More Than 9 Numbers";
+"salekLabel" = "Salek";
+"forgatPassLabel" = "Forget Your Password !";
+"enterEmailLabel" = "Please enter Email or Phone ";
+"emailTextField" = "Email / phone";
+"verifyBtn" = "Verify";
+"otpLabe" = "OTP has been sent to your mobile number  , please verify";
+"codeLabel" = "Verification cade";
+"otpTimer" = "5:00";
+"otpTimerLabel" = "Over Time OTP";
+"resetPassLabel" = "Please Enter new password";
+"resetPassTextField" = "New Password";
+"confirmPassTextField" = "Confirm New Password";
+"resetBtn" = "reset password";
+ 
+// MARK:- SignupWork
+"typeTextField" = "type of employment";
+"iDTextField" = "ID Number";
+"nationalityTextField" = "Nationality";
+"mobileTextField" = "Mobile";
+"addressesLabel" = "Addresses";
+"referredLabel" = "Have you been referred by a user?";
+"referredCodeLabel" = "Please enter the referrer code";
+"codeTextField" = "Code";
+"verificationLabel" = "Identity Verification";
+"iDphotoLabel" = "Please send a clear photo ID in order to be accepted";
+"frontLabel" = "from front";
+"backLabel" = "from back";
+"InformationLabel" = "Information";
+"signupWorkNav" = "work with us ";
+
+// MARK:- SignupIndividual
+"SignupIndividualNav" = "Individual";
+"completeMassge" = "Complete fields should not be empty";
+"photoMassge" = "please Select ID Photo";
+
+"createBtn" = "Create";
+"resendBtn" = "Resend Code";

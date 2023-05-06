@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MapVC-->
+        <scene sceneID="7B4-sC-9mm">
+            <objects>
+                <viewController storyboardIdentifier="MapVC" id="GQY-1S-Fp6" customClass="MapVC" customModule="Salek" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D7O-sz-aAH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3c1-2b-s8U">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </mapView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="yJ3-y9-ti6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bK-cc-fVv">
+                                <rect key="frame" x="35.5" y="792" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.15686274509803921" green="0.87450980392156863" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Aoj-7x-sNJ"/>
+                                </constraints>
+                                <state key="normal" title="Add Address">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveAddressButton:" destination="GQY-1S-Fp6" eventType="touchUpInside" id="Jrv-Iy-lDb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Go-hF-V6s">
+                                <rect key="frame" x="0.0" y="125" width="414" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationMark" translatesAutoresizingMaskIntoConstraints="NO" id="4NA-qK-6vD">
+                                <rect key="frame" x="182" y="421" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="I9J-k4-Bd4"/>
+                                    <constraint firstAttribute="height" constant="50" id="kt0-he-qeI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9a-R6-Nom">
+                                <rect key="frame" x="344" y="692" width="50" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="L1Q-LZ-6dc"/>
+                                    <constraint firstAttribute="height" constant="50" id="mgG-rA-B0k"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Current location"/>
+                                <connections>
+                                    <action selector="currentLocationTapped:" destination="GQY-1S-Fp6" eventType="touchUpInside" id="oj4-Ld-6Y2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yJ3-y9-ti6" firstAttribute="top" secondItem="XsA-48-5ov" secondAttribute="top" id="2Ra-J2-U7g"/>
+                            <constraint firstItem="yJ3-y9-ti6" firstAttribute="height" secondItem="3c1-2b-s8U" secondAttribute="height" multiplier="0.0684597" id="55E-EM-fjr"/>
+                            <constraint firstItem="4bK-cc-fVv" firstAttribute="top" secondItem="S9a-R6-Nom" secondAttribute="bottom" constant="50" id="FJY-w6-tCK"/>
+                            <constraint firstItem="XsA-48-5ov" firstAttribute="bottom" secondItem="3c1-2b-s8U" secondAttribute="bottom" id="Ipk-rq-dqg"/>
+                            <constraint firstItem="4bK-cc-fVv" firstAttribute="centerX" secondItem="D7O-sz-aAH" secondAttribute="centerX" id="Mjk-VK-8uf"/>
+                            <constraint firstItem="yJ3-y9-ti6" firstAttribute="leading" secondItem="XsA-48-5ov" secondAttribute="leading" id="Mxl-Qv-T3M"/>
+                            <constraint firstItem="3c1-2b-s8U" firstAttribute="top" secondItem="XsA-48-5ov" secondAttribute="top" id="RGL-lJ-2gv"/>
+                            <constraint firstItem="4NA-qK-6vD" firstAttribute="centerY" secondItem="D7O-sz-aAH" secondAttribute="centerY" constant="-2" id="RqZ-ie-ifg"/>
+                            <constraint firstItem="XsA-48-5ov" firstAttribute="trailing" secondItem="S9a-R6-Nom" secondAttribute="trailing" constant="20" id="SIc-EQ-8R6"/>
+                            <constraint firstItem="9Go-hF-V6s" firstAttribute="top" secondItem="yJ3-y9-ti6" secondAttribute="bottom" constant="25" id="SiW-G1-Lej"/>
+                            <constraint firstItem="yJ3-y9-ti6" firstAttribute="width" secondItem="3c1-2b-s8U" secondAttribute="width" id="VpG-rJ-icZ"/>
+                            <constraint firstItem="9Go-hF-V6s" firstAttribute="centerX" secondItem="D7O-sz-aAH" secondAttribute="centerX" id="XQd-r2-APf"/>
+                            <constraint firstItem="3c1-2b-s8U" firstAttribute="leading" secondItem="XsA-48-5ov" secondAttribute="leading" id="aIY-Ay-jYM"/>
+                            <constraint firstItem="XsA-48-5ov" firstAttribute="trailing" secondItem="3c1-2b-s8U" secondAttribute="trailing" id="fSH-eF-rjE"/>
+                            <constraint firstItem="9Go-hF-V6s" firstAttribute="height" secondItem="yJ3-y9-ti6" secondAttribute="height" multiplier="0.35" id="m22-zY-SW2"/>
+                            <constraint firstItem="4bK-cc-fVv" firstAttribute="width" secondItem="3c1-2b-s8U" secondAttribute="width" multiplier="0.828502" id="p0s-Vf-rP6"/>
+                            <constraint firstItem="9Go-hF-V6s" firstAttribute="width" secondItem="yJ3-y9-ti6" secondAttribute="width" id="q9G-AY-aSC"/>
+                            <constraint firstItem="XsA-48-5ov" firstAttribute="bottom" secondItem="4bK-cc-fVv" secondAttribute="bottom" constant="20" id="rKW-ih-qMP"/>
+                            <constraint firstItem="4NA-qK-6vD" firstAttribute="centerX" secondItem="D7O-sz-aAH" secondAttribute="centerX" id="u7y-wZ-IFs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XsA-48-5ov"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="9Go-hF-V6s" id="sNV-Jk-m8S"/>
+                        <outlet property="currentLocationBtn" destination="S9a-R6-Nom" id="ttF-TM-diG"/>
+                        <outlet property="mapView" destination="3c1-2b-s8U" id="EhF-9b-PTB"/>
+                        <outlet property="saveButton" destination="4bK-cc-fVv" id="9y4-B5-VAW"/>
+                        <outlet property="searchBar" destination="yJ3-y9-ti6" id="9Iw-BL-qLn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NtA-NA-pjm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Current location" width="512" height="512"/>
+        <image name="locationMark" width="1200" height="1200"/>
+    </resources>
+</document>
