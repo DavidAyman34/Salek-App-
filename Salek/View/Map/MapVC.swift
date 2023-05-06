@@ -38,17 +38,19 @@ class MapVC: UIViewController, UISearchBarDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        updateView()
+    }
+    
+    // MARK: -  Methods
+     func updateView(){
         mapView.delegate = self
         searchBar.delegate = self
         checkLocationService()
-        
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
-        
         let latitude = mapView.centerCoordinate.latitude
         let longtiude = mapView.centerCoordinate.longitude
-        
         let location = CLLocation(latitude: latitude, longitude: longtiude)
         location.fetchCityAndCountry { city, country, error in
             guard let city = city, let country = country, error == nil else { return }
@@ -84,9 +86,7 @@ class MapVC: UIViewController, UISearchBarDelegate {
             
         }
     }
-    
-    
-    func updateUI(){
+     func updateUI(){
         saveButton.titleLabel?.font = FontFamily.Nunito.bold.font(size: 20)
         saveButton.layer.cornerRadius = 15
         currentLocationBtn.layer.cornerRadius = currentLocationBtn.frame.size.width/2
@@ -95,27 +95,30 @@ class MapVC: UIViewController, UISearchBarDelegate {
     }
     
     
-    func setupLocationManger(){
+     func setupLocationManger(){
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         
         
     }
     
-    func centerViewOnUserLocation() {
+     func centerViewOnUserLocation() {
         if let location = locationManager.location?.coordinate {
             let region = MKCoordinateRegion.init(center: location , latitudinalMeters: 10000, longitudinalMeters: 10000)
             mapView.setRegion(region, animated: true)
         }
     }
-    func checkLocationAuthorization() {
+    
+     func checkLocationAuthorization() {
         
         switch CLLocationManager.authorizationStatus() {
         case .authorizedWhenInUse:
             // once we have authorization
             startTrackingUserLocation()
         case .denied:
-            //not allowed not give this permission and show alert to show how turn on permission
+            showAlert(title: "Location Services disabled", massage: "Please enable Location Services in Settings", present: self, titleBtn: "OK") {
+                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
+            }
             break
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
@@ -129,15 +132,14 @@ class MapVC: UIViewController, UISearchBarDelegate {
         
     }
     
-    func startTrackingUserLocation() {
+     func startTrackingUserLocation() {
         mapView.showsUserLocation = true
         centerViewOnUserLocation()
         locationManager.startUpdatingLocation()
         previousLocation = getCenterLocation(mapView: mapView)
     }
     
-    func checkLocationService() {
-        
+     func checkLocationService() {
         if CLLocationManager.locationServicesEnabled() {
             setupLocationManger()
             checkLocationAuthorization()
@@ -162,9 +164,9 @@ class MapVC: UIViewController, UISearchBarDelegate {
         
     }
     
-    
+    // MARK:- Button Methods
     @IBAction func saveAddressButton(_ sender: Any) {
-        if self.homeCareSpeciality != "" {
+        if searchBar.text?.isEmpty == true {
             showAlert(title: "error", massage: "select Your Location", present: self, titleBtn: "ok")
             
         }
@@ -178,6 +180,8 @@ class MapVC: UIViewController, UISearchBarDelegate {
         
         checkLocationService()
     }
+    
+    // MARK: - Public Methods
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         UIApplication.shared.beginIgnoringInteractionEvents()
         let activityIndicator = UIActivityIndicatorView()
@@ -186,8 +190,6 @@ class MapVC: UIViewController, UISearchBarDelegate {
         activityIndicator.hidesWhenStopped = true
         self.view.addSubview(activityIndicator)
         searchBar.resignFirstResponder()
-        
-        
         let searchRequest = MKLocalSearch.Request()
         searchRequest.naturalLanguageQuery = searchBar.text
         let activeSearch = MKLocalSearch(request: searchRequest)
@@ -225,7 +227,7 @@ class MapVC: UIViewController, UISearchBarDelegate {
     }
     
 }
-
+// MARK: - Extension
 extension CLLocation {
     func fetchCityAndCountry(completion: @escaping (_ city: String?, _ country:  String?, _ error: Error?) -> ()) {
         CLGeocoder().reverseGeocodeLocation(self) { completion($0?.first?.locality, $0?.first?.country, $1) }
