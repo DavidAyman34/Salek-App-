@@ -19,7 +19,6 @@
 		6F259EFE2624C89B00C8125B /* Library 3 am.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F259EFA2624C89B00C8125B /* Library 3 am.otf */; };
 		6F259EFF2624C89B00C8125B /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F259EFB2624C89B00C8125B /* Nunito-SemiBold.ttf */; };
 		6F2CC8222627203800CBC638 /* UIViewControllerr+SetNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2CC8212627203800CBC638 /* UIViewControllerr+SetNavigation.swift */; };
-		6F3EB1F929D71DFC002BA532 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3EB1F729D71DFC002BA532 /* Strings.swift */; };
 		6F4E62FA263068DC000B276D /* ForgatePassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4E62F9263068DC000B276D /* ForgatePassword.storyboard */; };
 		6F4E62FD26306BCE000B276D /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E62FC26306BCE000B276D /* ForgetPasswordVC.swift */; };
 		6F4E62FF26306BF5000B276D /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E62FE26306BF5000B276D /* ForgetPasswordView.swift */; };
@@ -40,6 +39,8 @@
 		6F92355026222A7B00C45F4B /* UIViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F92354D26222A7B00C45F4B /* UIViewController+Create.swift */; };
 		6F92355426222C0800C45F4B /* UIColor+ConvertHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F92355326222C0800C45F4B /* UIColor+ConvertHex.swift */; };
 		6F92355726222C5600C45F4B /* TextFiled+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F92355626222C5600C45F4B /* TextFiled+Padding.swift */; };
+		6FA37BF12A0A5DDA0064DE91 /* UINotificationsCenter+Check .swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA37BF02A0A5DDA0064DE91 /* UINotificationsCenter+Check .swift */; };
+		6FA37BF52A0A721F0064DE91 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA37BF42A0A721F0064DE91 /* Strings.swift */; };
 		6FB365C7263217B700DDA501 /* ForgetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB365C6263217B700DDA501 /* ForgetPasswordViewModel.swift */; };
 		6FC7EB9C29D9B42F001E64EE /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FC7EB9E29D9B42F001E64EE /* Auth.storyboard */; };
 		6FC95AF426373B3E00D0CEAC /* SignupIndividualVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC95AF326373B3E00D0CEAC /* SignupIndividualVC.swift */; };
@@ -79,7 +80,6 @@
 		6F259EFA2624C89B00C8125B /* Library 3 am.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Library 3 am.otf"; sourceTree = "<group>"; };
 		6F259EFB2624C89B00C8125B /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		6F2CC8212627203800CBC638 /* UIViewControllerr+SetNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewControllerr+SetNavigation.swift"; sourceTree = "<group>"; };
-		6F3EB1F829D71DFC002BA532 /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = en; path = en.lproj/Strings.swift; sourceTree = "<group>"; };
 		6F3EB20029D721A5002BA532 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6F4E62F9263068DC000B276D /* ForgatePassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgatePassword.storyboard; sourceTree = "<group>"; };
 		6F4E62FC26306BCE000B276D /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
@@ -104,6 +104,8 @@
 		6F92354D26222A7B00C45F4B /* UIViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Create.swift"; sourceTree = "<group>"; };
 		6F92355326222C0800C45F4B /* UIColor+ConvertHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ConvertHex.swift"; sourceTree = "<group>"; };
 		6F92355626222C5600C45F4B /* TextFiled+Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextFiled+Padding.swift"; sourceTree = "<group>"; };
+		6FA37BF02A0A5DDA0064DE91 /* UINotificationsCenter+Check .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINotificationsCenter+Check .swift"; sourceTree = "<group>"; };
+		6FA37BF42A0A721F0064DE91 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		6FB365C6263217B700DDA501 /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
 		6FC7EB9F29D9B7E5001E64EE /* ar */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ar; path = ar.lproj/Auth.storyboard; sourceTree = "<group>"; };
 		6FC95AF326373B3E00D0CEAC /* SignupIndividualVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupIndividualVC.swift; sourceTree = "<group>"; };
@@ -212,7 +214,7 @@
 		6F5CF492262230E4003B88DD /* Strings */ = {
 			isa = PBXGroup;
 			children = (
-				6F3EB1F729D71DFC002BA532 /* Strings.swift */,
+				6FA37BF42A0A721F0064DE91 /* Strings.swift */,
 				6FF604472622546E0019627F /* Localizable.strings */,
 			);
 			path = Strings;
@@ -291,6 +293,7 @@
 		6F923546262229E800C45F4B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				6FA37BEF2A0A5D580064DE91 /* UINotificationsCenter  */,
 				6F92354726222A2700C45F4B /* UIButton */,
 				6F92354A26222A5300C45F4B /* UIViewController */,
 				6F92355126222AEC00C45F4B /* UIView */,
@@ -408,6 +411,14 @@
 				6F9235372622270E00C45F4B /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		6FA37BEF2A0A5D580064DE91 /* UINotificationsCenter  */ = {
+			isa = PBXGroup;
+			children = (
+				6FA37BF02A0A5DDA0064DE91 /* UINotificationsCenter+Check .swift */,
+			);
+			name = "UINotificationsCenter ";
 			sourceTree = "<group>";
 		};
 		6FB365C82632194900DDA501 /* Auth */ = {
@@ -703,10 +714,11 @@
 				6F5CF4A52622378A003B88DD /* APIRouter.swift in Sources */,
 				6F4E62FD26306BCE000B276D /* ForgetPasswordVC.swift in Sources */,
 				6F2CC8222627203800CBC638 /* UIViewControllerr+SetNavigation.swift in Sources */,
+				6FA37BF12A0A5DDA0064DE91 /* UINotificationsCenter+Check .swift in Sources */,
 				6F4E63042630893D000B276D /* VerificationCodeVC.swift in Sources */,
 				6FD88D6626389FA300479DF0 /* SignupWorkViewModel.swift in Sources */,
-				6F3EB1F929D71DFC002BA532 /* Strings.swift in Sources */,
 				6F5CF49E26223473003B88DD /* AssetsManager.swift in Sources */,
+				6FA37BF52A0A721F0064DE91 /* Strings.swift in Sources */,
 				6FEE11BA2626198900633C4F /* SignupStoreVC.swift in Sources */,
 				6FE929D32623098400C525DB /* SignInView.swift in Sources */,
 				6F4E62FF26306BF5000B276D /* ForgetPasswordView.swift in Sources */,
@@ -720,14 +732,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6F3EB1F729D71DFC002BA532 /* Strings.swift */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6F3EB1F829D71DFC002BA532 /* en */,
-			);
-			name = Strings.swift;
-			sourceTree = "<group>";
-		};
 		6F9235392622270E00C45F4B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

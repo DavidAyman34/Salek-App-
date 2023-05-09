@@ -94,3 +94,9 @@ struct Languages {
     static let english = "en"
     static let arabic = "ar"
 }
+
+// NotificationIn
+struct NotificationIde {
+    static let identifier = "my-morning-Notification"
+   
+}

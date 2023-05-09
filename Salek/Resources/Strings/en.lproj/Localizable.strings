@@ -64,7 +64,7 @@ Phone Must Be More Than 9 Numbers";
 "resetPassTextField" = "New Password";
 "confirmPassTextField" = "Confirm New Password";
 "resetBtn" = "reset password";
- 
+
 // MARK:- SignupWork
 "typeTextField" = "type of employment";
 "iDTextField" = "ID Number";
@@ -88,3 +88,7 @@ Phone Must Be More Than 9 Numbers";
 
 "createBtn" = "Create";
 "resendBtn" = "Resend Code";
+"titleNotif" = "Time to order";
+"bodyNotif" = "Signup Now and get offer 50%";
+ 
+ 

@@ -15,7 +15,7 @@ protocol sendingAddress {
     func send(address: String)
 }
 
-class MapVC: UIViewController, UISearchBarDelegate {
+class MapVC: UIViewController, UISearchBarDelegate, UIGestureRecognizerDelegate {
     
     // MARK:- Outlets
     @IBOutlet weak var mapView: MKMapView!
@@ -35,6 +35,7 @@ class MapVC: UIViewController, UISearchBarDelegate {
         super.viewDidLoad()
         
         updateUI()
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {

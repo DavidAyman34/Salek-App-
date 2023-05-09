@@ -35,9 +35,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable {
     
     
     func reset() {
-        switchToSigninState()
+        let window = getWindow()
+        
+        let signIn = SigninVC.create()
+        let navigationController = UINavigationController(rootViewController: signIn)
+        
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
         
     }
     
+    
+    
+    func getWindow() -> UIWindow? {
+        return UIApplication.shared.keyWindow
+    }
+    
+   
 }
-

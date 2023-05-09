@@ -8,19 +8,19 @@
 "signinBtn" = "الدخول";
 "forgetPass" = "نسيت كلمة المرور";
 "skipBtn" = "〈";
-"createAccountBtn" = "Create Account";
+"createAccountBtn" = " انشاء حساب";
 "languageBtn" = "اللغة";
-"orLabel" = "OR";
-"emailText" = "Email";
-"passText" = "Password";
+"orLabel" = "او";
+"emailText" = "الحساب";
+"passText" = "كلمة السر";
 "storeLabel" = "  Store
 Customize and Personalize Chrome on your desktop computer with Extensions, Themes and Apps. Power up your Chrome. You can  " ;
 "personalLabel" = " individual
 Customize and Personalize Chrome on your desktop computer with Extensions, Themes and Apps. Power up your Chrome. You can ";
 "workLabel" = " Work with us
 Customize and Personalize Chrome on your desktop computer with Extensions, Themes and Apps. Power up your Chrome. You can ";
-"nextBtn" = "Next";
-"chooseLabel" = "Choose Account";
+"nextBtn" = "التالي";
+"chooseLabel" = "اختار الحساب";
 "DetailsTextField" = "Details store";
 "confirmPassTextField" = "Confirm Password";
 "nameTextField" = "Name";
@@ -54,7 +54,7 @@ Phone Must Be More Than 9 Numbers";
 "salekLabel" = "Salek";
 "forgatPassLabel" = "Forget Your Password !";
 "enterEmailLabel" = "Please enter Email or Phone ";
-"emailTextField" = "Email / phone";
+"emailTextField" = "البريد الالكتروني او رقم الهاتف";
 "verifyBtn" = "Verify";
 "otpLabe" = "OTP has been sent to your mobile number  , please verify";
 "codeLabel" = "Verification cade";
@@ -88,3 +88,5 @@ Phone Must Be More Than 9 Numbers";
 
 "createBtn" = "Create";
 "resendBtn" = "Resend Code";
+"titleNotif" = "Time to order";
+"bodyNotif" = "Signup Now and get offer 50%";

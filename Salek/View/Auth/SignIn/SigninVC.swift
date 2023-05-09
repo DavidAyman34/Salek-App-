@@ -8,6 +8,7 @@
 
 import UIKit
 import MOLH
+import UserNotifications
 
 // MARK:- Protocol Methods
 protocol SigninProtocols: class{
@@ -36,7 +37,7 @@ class SigninVC: UIViewController,UITextFieldDelegate {
         SigninView.passwordTextfield.delegate = self
         iconClick = true
         lang = MOLHLanguage.currentAppleLanguage()
-        
+        pushNotification()
     
     }
     
@@ -55,12 +56,19 @@ class SigninVC: UIViewController,UITextFieldDelegate {
         iconClick = !(iconClick ?? false)
     }
     
-    
+    private func pushNotification(){
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.checkForPermation(title: L10n.titleNotif, body: L10n.navgationTitle, hour: 15, min: 23, isDaily: true)
+    }
     private func changeLanguage(){
         MOLH.setLanguageTo(MOLHLanguage.currentAppleLanguage() == Languages.english ? Languages.arabic : Languages.english)
         print(MOLHLanguage.currentAppleLanguage().description)
-        
-        MOLH.reset()
+      
+        //MOLH.reset()
+        showAlert(title: "restert", massage: "you should restert app", present: self, titleBtn: "ok") {
+            exit(0)
+        }
+       
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.layer.borderColor = UIColor(named: ColorName.blue).cgColor

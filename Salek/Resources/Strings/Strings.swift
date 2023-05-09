@@ -22,6 +22,8 @@ internal enum L10n {
   internal static let agreeLabel = L10n.tr("Localizable", "agreeLabel", fallback: "I agree to the ")
   /// from back
   internal static let backLabel = L10n.tr("Localizable", "backLabel", fallback: "from back")
+  /// Signup Now and get offer 50%
+  internal static let bodyNotif = L10n.tr("Localizable", "bodyNotif", fallback: "Signup Now and get offer 50%")
   /// Choose Account
   internal static let chooseLabel = L10n.tr("Localizable", "chooseLabel", fallback: "Choose Account")
   /// Verification cade
@@ -146,6 +148,8 @@ internal enum L10n {
   internal static let storeTypeTextField = L10n.tr("Localizable", "storeTypeTextField", fallback: "Store Type")
   /// Term & Conditions
   internal static let termsBtn = L10n.tr("Localizable", "termsBtn", fallback: "Term & Conditions")
+  /// Time to order
+  internal static let titleNotif = L10n.tr("Localizable", "titleNotif", fallback: "Time to order")
   /// type of employment
   internal static let typeTextField = L10n.tr("Localizable", "typeTextField", fallback: "type of employment")
   /// Please upload you license

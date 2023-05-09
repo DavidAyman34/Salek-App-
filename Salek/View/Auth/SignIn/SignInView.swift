@@ -118,7 +118,7 @@ class SignInView: UIView {
         textField.label.text = text
         textField.setOutlineColor(UIColor(named: ColorName.blue), for: .editing)
         textField.containerRadius = 20
-        textField.textAlignment = .left
+        textField.textAlignment = .natural
         textField.setFloatingLabelColor(UIColor(named: ColorName.blue), for: .editing)
         textField.setFloatingLabelColor(UIColor(named: ColorName.blue), for: .normal)
         textField.setTextColor(UIColor(named: ColorName.blue), for: .editing)

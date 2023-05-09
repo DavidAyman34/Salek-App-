@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ResetPasswordVC: UIViewController {
+class ResetPasswordVC: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet var resetView: ResetPasswordView!
      var iconClick = true
@@ -17,6 +17,7 @@ class ResetPasswordVC: UIViewController {
         super.viewDidLoad()
         resetView.setup()
         iconClick = true
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
     }
     
     // MARK:- Private Methods

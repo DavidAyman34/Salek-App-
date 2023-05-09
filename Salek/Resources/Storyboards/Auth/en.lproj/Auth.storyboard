@@ -74,7 +74,7 @@
                                                 </constraints>
                                                 <color key="tintColor" systemColor="darkTextColor"/>
                                             </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bdO-v0-R3a" customClass="MDCOutlinedTextField">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bdO-v0-R3a" customClass="MDCOutlinedTextField">
                                                 <rect key="frame" x="30" y="270" width="347.66666666666669" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="csr-AR-esq"/>
